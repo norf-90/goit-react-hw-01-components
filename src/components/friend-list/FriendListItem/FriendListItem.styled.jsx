@@ -11,6 +11,7 @@ export const OnlineStatus = styled.span`
   height: 10px;
   background-color: ${({ isOnline }) => (isOnline ? 'green' : 'red')};
   border-radius: 5px;
+  border: 2px solid #000000;
 `;
 
 export const Avatar = styled.img`

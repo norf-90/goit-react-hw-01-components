@@ -11,10 +11,9 @@ import { getRandomHexColor } from 'utils/getRandomColor';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <StatisticsCard className="statistics">
-      {title && <Title className="title">{title}</Title>}
-
-      <StatsList className="stat-list">
+    <StatisticsCard>
+      {title && <Title>{title}</Title>}
+      <StatsList>
         {stats.map(({ id, label, percentage }) => {
           return (
             <StatsItem
@@ -22,10 +21,8 @@ const Statistics = ({ title, stats }) => {
               percentage={percentage}
               color={getRandomHexColor()}
             >
-              <StatLabel className="label">{label} </StatLabel>
-              <StatValue className percentage={percentage}>
-                {percentage}%
-              </StatValue>
+              <StatLabel>{label} </StatLabel>
+              <StatValue percentage={percentage}>{percentage}%</StatValue>
             </StatsItem>
           );
         })}

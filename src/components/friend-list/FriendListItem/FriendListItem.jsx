@@ -5,8 +5,8 @@ const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
     <ListItem>
       <OnlineStatus isOnline={isOnline}></OnlineStatus>
-      <Avatar className="avatar" src={avatar} alt="User avatar" width="48" />
-      <Name className="name">{name}</Name>
+      <Avatar src={avatar} alt="User avatar" width="48" />
+      <Name>{name}</Name>
     </ListItem>
   );
 };

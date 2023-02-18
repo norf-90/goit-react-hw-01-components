@@ -5,7 +5,6 @@ export const UserCard = styled.div`
   margin: 0 0 20px 0;
   font-family: monospace;
   font-size: 20px;
-  /* border: 2px solid orangered; */
   border-radius: 60px;
   background: linear-gradient(145deg, #a77777, #e0dfdf);
   box-shadow: 5px 5px 10px #7e7e7e, -5px -5px 10px #ffffff;
