@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
-import { Fragment } from 'react';
+import { ListItem, OnlineStatus, Avatar, Name } from './FriendListItem.styled';
 
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
-    <Fragment>
-      <span className={isOnline ? 'status--online' : 'status'}></span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
-    </Fragment>
+    <ListItem>
+      <OnlineStatus isOnline={isOnline}></OnlineStatus>
+      <Avatar className="avatar" src={avatar} alt="User avatar" width="48" />
+      <Name className="name">{name}</Name>
+    </ListItem>
   );
 };
 
